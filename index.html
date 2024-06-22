@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/all.min.css" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-4" id="navbar-example">
+      <div class="container-xl">
+        <a
+          class="navbar-brand fs-5 fw-bold text-uppercase text-white d-flex justify-content-center align-items-center"
+          href="#"
+        >
+          <div class="logo">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="logo-text ms-3">
+            <div class="text-capitalize fs-6">weather</div>
+            <span class="text-lowercase">tagline goes here </span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end position-relative"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-lg-0 justify-content-center py-3">
+            <li class="nav-item active">
+              <a
+                class="nav-link text-white"
+                data-scroll
+                data-target="#Home"
+                aria-current="page"
+                href="#Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                data-scroll
+                data-target="#About"
+                href="#About"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                data-scroll
+                data-target="#Services"
+                href="#Services"
+                >Live cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                data-scroll
+                data-target="#Work"
+                href="#Work"
+                >Photo</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                data-scroll
+                data-target="#Client"
+                href="#Client"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="py-5">
+      <div class="container">
+        <div class="group mb-3 position-relative">
+          <input
+            id="find-location-input"
+            type="text "
+            class="form-control"
+            placeholder="Find your location..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary  find-location-btn"
+            type="button"
+            id="button-addon2"
+          >
+            Find
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row my-5 shadow-lg weather-grid"></div>
+      </div>
+    </main>
+    <footer class="text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="group mb-3 position-relative">
+              <input
+                type="text "
+                class="form-control"
+                placeholder="Enter your email to subscribe..."
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                subscribe
+              </button>
+            </div>
+            <span class="text-white-50"
+              >Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved</span
+            >
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links d-flex">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
